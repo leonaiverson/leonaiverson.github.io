@@ -10,7 +10,7 @@
 
 3. 按照目录中README文件提示安装：
 
-   ```powershell
+   ```
    cd valgrind-3.13.0
    ./configure --prefix=/root/valgrind-3.13.0 （可以安装其他位置）
    make
@@ -19,7 +19,7 @@
 
 4. 添加valgrind到环境变量
 
-   ```powershell
+   ```
    vi ~/.bashrc
    export PATH=$PARH:/root/valgrind-3.13.0/bin
    source ~/.bashrc
@@ -29,7 +29,7 @@
 
 6. 要在程序上运行Cachegrind
 
-   ```powershell
+   ```
    valgrind --tool=cachegrind 你的程序名 以及你的程序的命令行参数
    ```
 
